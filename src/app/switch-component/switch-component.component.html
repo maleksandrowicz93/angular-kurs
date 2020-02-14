@@ -1,0 +1,13 @@
+<p>Dni tygodnia po niemiecku:</p>
+
+<div *ngFor="let day of days">
+    <div [ngSwitch]="day">
+        <div *ngSwitchCase="'Poniedziałek'">Montag</div>
+        <div *ngSwitchCase="'Wtorek'">Dienstag</div>
+        <div *ngSwitchCase="'Środa'">Mittwoch</div>
+        <div *ngSwitchCase="'Czwartek'">Donnerstag</div>
+        <div *ngSwitchCase="'Piątek'">Freitag</div>
+        <div *ngSwitchCase="'Sobota'">Samstag</div>
+        <div *ngSwitchDefault>Sonntag</div>
+    </div>
+</div>

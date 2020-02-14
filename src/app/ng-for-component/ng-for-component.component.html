@@ -1,0 +1,32 @@
+<h3>Witamy na kursie {{title | uppercase}}</h3>
+
+<p>Dni tygodnia:</p>
+
+<ul>
+    <ng-container *ngFor="let day of days; let e = even">
+        <li *ngIf="e">
+            {{day}}
+        </li>
+    </ng-container>
+</ul>
+
+<div *ngIf="dogs.length; then areDogs; else noDogs"></div>
+
+<ng-template #areDogs>
+    <ul>
+        <ng-container *ngFor="let dog of dogs; let i = index">
+            <li *ngIf="dog.age > 3 && dog.age < 8">
+                {{i + 1}} Mój pies ma na imię {{dog.name}} i ma {{dog.age}} lata
+            </li>
+        </ng-container>
+    </ul>
+</ng-template>
+
+<ng-template #noDogs>
+    <p>Piesków nie ma :(</p>
+</ng-template>
+
+<button (click)="addDogs()">Dodaj</button>
+<button (click)="removeDogs()">Usuń</button>
+
+<app-nowy *ngFor="let i of [1, 2, 3, 4]"></app-nowy>
