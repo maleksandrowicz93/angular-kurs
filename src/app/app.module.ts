@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PropertBindingComponent } from './propert-binding/propert-binding.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PropertBindingComponent
   ],
   imports: [
     BrowserModule,
