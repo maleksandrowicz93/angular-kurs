@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PropertBindingComponent } from './propert-binding/propert-binding.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
+import { PropertyEventBindingComponent } from './property-event-binding/property-event-binding.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PropertBindingComponent,
-    EventBindingComponent
+    EventBindingComponent,
+    PropertyEventBindingComponent
   ],
   imports: [
     BrowserModule,
