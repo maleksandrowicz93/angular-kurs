@@ -1,1 +1,12 @@
 <app-child [tasks]='tasksList' (eventTask)='selected($event)'></app-child>
+<app-content-projection>
+  <h1>Wysyłam trochę kodu html</h1>
+  <ul>
+    <li>Jeden</li>
+    <li>Dwa</li>
+    <li>Trzy</li>
+  </ul>
+</app-content-projection>
+<app-content-projection2>
+  <p>Tagi z app-root do app-content-projection2 wstawione!</p>
+</app-content-projection2>
