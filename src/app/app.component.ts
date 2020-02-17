@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-kurs';
+
+  tasksList = ['Sprzątanie kuwety', 'Gotowanie', 'Nauka angulara'];
+
+  selected(task: string): void {
+    console.log(task);
+  }
+
 }
